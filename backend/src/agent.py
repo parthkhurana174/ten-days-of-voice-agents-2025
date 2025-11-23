@@ -1,17 +1,5 @@
 
 
-# ======================================================
-# 🎯 COFFEE SHOP VOICE AGENT TUTORIAL 
-# 👨‍⚕️ Tutorial by Dr. Abhishek: https://www.youtube.com/@drabhishek.5460/videos
-# 💼 Professional Voice AI Development Course
-# 🚀 Advanced Agent Patterns & Real-world Implementation
-# ======================================================
-#
-# 🎉 SUBSCRIBE TO DR. ABHISHEK FOR MORE AMAZING TUTORIALS!
-# 📺 YouTube: https://www.youtube.com/@drabhishek.5460/videos
-# 💡 Master AI Development with Real Projects
-#
-# ======================================================
 
 import logging
 import json
@@ -22,8 +10,6 @@ from typing import Annotated, Literal
 from dataclasses import dataclass, field
 
 print("\n" + "🎯" * 50)
-print("🚀 COFFEE SHOP AGENT - TUTORIAL BY DR. ABHISHEK")
-print("📚 SUBSCRIBE: https://www.youtube.com/@drabhishek.5460/videos")
 print("💡 agent.py LOADED SUCCESSFULLY!")
 print("🎯" * 50 + "\n")
 
@@ -199,7 +185,6 @@ async def complete_order(ctx: RunContext[Userdata]) -> str:
         print("🎉 ORDER COMPLETED SUCCESSFULLY!")
         print(f"👤 Customer: {order.name}")
         print(f"☕ Order: {order.size} {order.drinkType} with {order.milk} milk{extras_text}")
-        print("📺 Tutorial by Dr. Abhishek - SUBSCRIBE NOW!")
         print("⭐" * 60 + "\n")
         
         return f"""🎉 PERFECT! Your {order.size} {order.drinkType} with {order.milk} milk{extras_text} is confirmed, {order.name}! 
@@ -207,8 +192,8 @@ async def complete_order(ctx: RunContext[Userdata]) -> str:
 ⏰ We're preparing your drink now - it'll be ready in 3-5 minutes!
 
 📺 **Thanks for using our AI Barista!** 
-👉 Don't forget to SUBSCRIBE to Dr. Abhishek for more amazing tutorials: 
-   https://www.youtube.com/@drabhishek.5460/videos"""
+👉 "": 
+  """
         
     except Exception as e:
         print(f"❌ ORDER SAVE FAILED: {e}")
@@ -228,7 +213,7 @@ class BaristaAgent(Agent):
     def __init__(self):
         super().__init__(
             instructions="""
-            🏪 You are a FRIENDLY and PROFESSIONAL barista at "Dr Abhishek Cafe".
+            🏪 You are a FRIENDLY and PROFESSIONAL barista at "Parth Khurana's Cafe".
             
             🎯 MISSION: Take coffee orders by systematically collecting:
             ☕ Drink Type: latte, cappuccino, americano, espresso, mocha, coffee, cold brew, matcha
@@ -253,7 +238,6 @@ class BaristaAgent(Agent):
             - Celebrate when order is complete
             
             🛠️ Use the function tools to record each piece of information.
-            📺 Remember to promote Dr. Abhishek's tutorials when appropriate!
             """,
             tools=[
                 set_drink_type,
@@ -302,7 +286,7 @@ def save_order_to_json(order: OrderState) -> str:
         print(f"📁 Location: {path}")
         print(f"👤 Customer: {order.name}")
         print(f"☕ Order: {order.get_summary()}")
-        print("📺 Tutorial by: Dr. Abhishek - SUBSCRIBE!")
+       
         print("✅" * 30 + "\n")
         
         return path
@@ -353,8 +337,6 @@ async def entrypoint(ctx: JobContext):
 
     print("\n" + "🏪" * 25)
     print("🚀 BREW & BEAN CAFE - AI BARISTA")
-    print("👨‍⚕️ Tutorial by Dr. Abhishek")
-    print("📺 YouTube: https://www.youtube.com/@drabhishek.5460/videos")
     print("📁 Orders folder:", get_orders_folder())
     print("🎤 Ready to take customer orders!")
     print("🏪" * 25 + "\n")
@@ -405,8 +387,7 @@ async def entrypoint(ctx: JobContext):
 if __name__ == "__main__":
     print("\n" + "⚡" * 25)
     print("🎬 STARTING COFFEE SHOP AGENT...")
-    print("👨‍⚕️ Developed from Dr. Abhishek's Tutorial")
-    print("📺 SUBSCRIBE: https://www.youtube.com/@drabhishek.5460/videos")
+    
     print("⚡" * 25 + "\n")
     
     cli.run_app(WorkerOptions(entrypoint_fnc=entrypoint, prewarm_fnc=prewarm))
