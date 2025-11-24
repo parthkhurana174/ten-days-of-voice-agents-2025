@@ -1,0 +1,12 @@
+[
+    {
+        "timestamp": "2025-11-24T19:55:23.274956",
+        "mood": "good",
+        "energy": "a little tired",
+        "objectives": [
+            "study for an hour",
+            "take a short walk"
+        ],
+        "summary": "I suggested breaking your study session into two 30-minute blocks to manage tiredness."
+    }
+]
