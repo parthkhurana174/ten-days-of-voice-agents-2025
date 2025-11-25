@@ -1,0 +1,20 @@
+[
+    {
+        "id": "html",
+        "title": "HTML",
+        "summary": "HTML defines the structure of web pages using elements and tags like <p>, <div>, and <a>. It provides the skeleton for content on the web.",
+        "sample_question": "What is HTML used for?"
+    },
+    {
+        "id": "css",
+        "title": "CSS",
+        "summary": "CSS styles HTML elements it controls layout, colors, spacing, fonts, and responsive behavior across devices.",
+        "sample_question": "How do you center a div horizontally and vertically?"
+    },
+    {
+        "id": "javascript",
+        "title": "JavaScript",
+        "summary": "JavaScript adds interactivity to web pages. It manipulates the DOM, handles events, and lets pages fetch and update data dynamically.",
+        "sample_question": "What is an event listener in JavaScript?"
+    }
+]
